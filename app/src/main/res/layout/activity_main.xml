@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="controladoria.save.irremote.MainActivity">
+
+    <ImageView
+        android:id="@+id/sbvolup"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/sbvoldown"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_action_up" />
+
+    <ImageView
+        android:id="@+id/sbvoldown"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_action_down" />
+
+    <ImageView
+        android:id="@+id/tvpower"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_action_power" />
+
+    <ImageView
+        android:id="@+id/tvsource"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignStart="@+id/tvpower"
+        android:layout_alignTop="@+id/sbvolup"
+        android:src="@drawable/ic_action_source" />
+
+    <ImageView
+        android:id="@+id/tvchprev"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvchnext"
+        android:src="@drawable/ic_action_ch_down" />
+
+    <ImageView
+        android:id="@+id/tvchnext"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/sbvoldown"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_action_ch_up" />
+
+    <ImageView
+        android:id="@+id/tempMaior"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/tvsource"
+        android:src="@drawable/ic_action_next" />
+
+    <ImageView
+        android:id="@+id/TempMenor"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/tvsource"
+        android:src="@drawable/ic_action_prev" />
+
+</RelativeLayout>
